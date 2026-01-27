@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 900px;
+    width: 100%;
+}
+
+.display {
+    margin-bottom: 30px;
+}
+
+#output {
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    resize: none;
+    outline: none;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(15, 1fr);
+    max-width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.key {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: none;
+    border-radius: 8px;
+    padding: 15px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(145deg, #f0f0f0, #d0d0d0);
+}
+
+.key:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #e0e0e0, #c0c0c0);
+}
+
+.key.pressed {
+    background: linear-gradient(145deg, #4CAF50, #45a049);
+    color: white;
+    transform: scale(0.95);
+}
+
+/* Special key sizes */
+.key.tab { grid-column: span 2; }
+.key.caps { grid-column: span 2; }
+.key.shift-left { grid-column: span 2; }
+.key.shift-right { grid-column: span 3; }
+.key.ctrl { grid-column: span 2; }
+.key.space { grid-column: span 6; }
+.key.enter { grid-column: span 2; }
+.key.backspace { grid-column: span 2; }
+
+/* Special key colors */
+.key.function {
+    background: linear-gradient(145deg, #ff6b6b, #ee5a52);
+    color: white;
+}
+
+.key.modifier {
+    background: linear-gradient(145deg, #4ecdc4, #44a08d);
+    color: white;
+}
+
+.key.space {
+    background: linear-gradient(145deg, #45b7d1, #3a9bc1);
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 25px;
+        max-width: 95%;
+    }
+    
+    .keyboard {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .key {
+        font-size: 13px;
+        padding: 13px 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .keyboard {
+        gap: 6px;
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+    .key {
+        padding: 12px 6px;
+        font-size: 12px;
+        min-height: 45px;
+    }
+    
+    #output {
+        height: 100px;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .display {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .keyboard {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 5px;
+    }
+    
+    .key {
+        padding: 10px 5px;
+        font-size: 11px;
+        min-height: 42px;
+    }
+    
+    .key.space { grid-column: span 4; }
+    .key.shift-right { grid-column: span 2; }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .keyboard {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4px;
+    }
+    
+    .key {
+        padding: 8px 4px;
+        font-size: 10px;
+        min-height: 38px;
+        border-radius: 6px;
+    }
+    
+    #output {
+        height: 80px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .key.tab, .key.caps, .key.enter, .key.backspace { grid-column: span 1; }
+    .key.shift-left, .key.shift-right { grid-column: span 1; }
+    .key.ctrl { grid-column: span 1; }
+    .key.space { grid-column: span 3; }
+}
+
+@media (max-width: 360px) {
+    .keyboard {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .key {
+        padding: 6px 3px;
+        font-size: 9px;
+        min-height: 35px;
+    }
+    
+    #output {
+        height: 70px;
+        font-size: 13px;
+    }
+    
+    .key.space { grid-column: span 2; }
+}
