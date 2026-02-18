@@ -88,7 +88,7 @@ body.light {
 .display {
     margin-bottom: 30px;
 }
-
+  
 #output {
     width: 100%;
     height: 120px;
@@ -103,7 +103,7 @@ body.light {
     box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.keyboard { 
+.keyboard {  
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(15, 1fr);
@@ -116,7 +116,7 @@ body.light {
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     font-weight: 500;
-}
+} 
 
 .key {
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
@@ -130,7 +130,7 @@ body.light {
     transition: all 0.1s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     user-select: none; 
-    min-height: 50px;
+    min-height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +146,7 @@ body.light {
     width: 0;
     height: 0; 
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
+    border-radius: 50%; 
     transform: translate(-50%, -50%);
     transition: all 0.3s ease;
 }
@@ -159,7 +159,7 @@ body.light {
 .dark .key {
     background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
     color: #fff;
-} 
+}  
 
 .key:hover {
     transform: translateY(-2px);
@@ -175,7 +175,7 @@ body.light {
 
 .key.pressed {
     background: linear-gradient(145deg, #4CAF50, #45a049);
-    color: white;
+    color: white; 
     transform: scale(0.95);
 }
 
@@ -188,7 +188,7 @@ body.light {
 .key.space { grid-column: span 6; }
 .key.enter { grid-column: span 2; }
 .key.backspace { grid-column: span 2; }
-
+ 
 /* Special key colors */
 .key.function {
     background: linear-gradient(145deg, #ff6b6b, #ee5a52);
@@ -201,7 +201,7 @@ body.light {
 }
 
 .key.space {
-    background: linear-gradient(145deg, #45b7d1, #3a9bc1);
+    background: linear-gradient(145deg, #45b7d1, # 3a9bc1);
     color: white;
 }
 
@@ -214,7 +214,7 @@ body.light {
     
     .keyboard {
         grid-template-columns: repeat(12, 1fr);
-    }
+    } 
     
     .key {
         font-size: 13px;
@@ -230,7 +230,7 @@ body.light {
     
     .keyboard {
         gap: 6px;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(10, 1fr); 
     }
     
     .key {
@@ -245,7 +245,7 @@ body.light {
         padding: 15px;
     }
      
-    .display {
+    .display { 
         margin-bottom: 20px;
     }
 }
