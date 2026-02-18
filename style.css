@@ -201,7 +201,7 @@ body.light {
 }
 
 .key.space {
-    background: linear-gradient(145deg, #45b7d1, #3a9bc1);
+    background: linear-gradient(145deg, #45b7d1, # 3a9bc1);
     color: white;
 }
 
@@ -357,7 +357,7 @@ body.light {
 .emoji { 
     background: none; 
     border: none;
-    font-size: 20px;  
+    font-size: 20px; 
     padding: 8px; 
     border-radius: 8px;   
     cursor: pointer;
