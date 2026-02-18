@@ -345,24 +345,24 @@ body.light {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     display: none;
     grid-template-columns: repeat(8, 1fr);
-    gap: 8px;
+    gap: 8px; 
     max-width: 300px;
     z-index: 1000;
 }
-
+ 
 .emoji-panel.show {
     display: grid;
 }
 
-.emoji {
-    background: none;
+.emoji { 
+    background: none; 
     border: none;
     font-size: 20px;
     padding: 8px;
-    border-radius: 8px; 
+    border-radius: 8px;  
     cursor: pointer;
     transition: all 0.2s ease;
-}
+} 
 
 .emoji:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -370,12 +370,12 @@ body.light {
 }
 
 .prediction-bar {
-    display: flex;
+    display: flex; 
     gap: 10px;
     margin-bottom: 15px;
     overflow-x: auto;
     padding: 5px 0;
-}
+} 
 
 .prediction {
     background: rgba(255, 255, 255, 0.2);
