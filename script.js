@@ -435,11 +435,11 @@ class ModernKeyboard {
         if (currentWord.length < 2) return;
         
         const predictions = this.commonWords
-            .filter(word => word.startsWith(currentWord) && word !== currentWord)
+            .filter(word =>  word.startsWith(currentWord) && word !== currentWord)
             .slice(0, 3);
         
         const bar = document.getElementById('predictionBar');
-        bar.innerHTML = '';
+        bar.innerHTML = ' ';
         
         predictions.forEach(word => {
             const btn = document.createElement('button');
