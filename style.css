@@ -166,10 +166,10 @@ body.light {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     background: linear-gradient(145deg, #f0f0f0, #d0d0d0);
 }
-
+ 
 .key:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     background: linear-gradient(145deg, #e0e0e0, #c0c0c0);
 }
 
