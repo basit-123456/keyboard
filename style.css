@@ -4,7 +4,7 @@
     box-sizing: border-box; 
 }
 
-body { 
+body {  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh; 
@@ -12,12 +12,12 @@ body {
     align-items: center; 
     justify-content: center;  
     padding: 20px; 
-    transition:  all 0.3s ease;   
+    transition:  all 0.3s ease;    
 }  
  
 body.dark {
     background: linear-gradient(135deg,  #2c3e50 0%, #34495e 100%);
-} 
+}  
  
 body.light {
     background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); 
@@ -37,7 +37,7 @@ body.light {
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
 .header h1 {
@@ -50,7 +50,7 @@ body.light {
 }
 
 .dark .header h1 {
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 0.95); 
 }
 
 .dark .container {
@@ -67,7 +67,7 @@ body.light {
  
 .control-btn {
     background: rgba(255, 255, 255, 0.2);
-    border: none;
+    border: none; 
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 16px;
@@ -183,7 +183,7 @@ body.light {
 .key.tab { grid-column: span 2; }
 .key.caps { grid-column: span 2; }
 .key.shift-left { grid-column: span 2; }
-.key.shift-right { grid-column: span 3; }
+.key.shift-right { grid-column: span 3 ; }
 .key.ctrl { grid-column: span 2; }
 .key.space { grid-column: span 6; }
 .key.enter { grid-column: span 2; }
@@ -205,7 +205,7 @@ body.light {
     color: white;
 }
 
-/* Responsive design */
+/* Responsive design */ 
 @media (max-width: 1024px) {
     .container {
         padding: 25px;
@@ -225,7 +225,7 @@ body.light {
 @media (max-width: 768px) {
     .container {
         padding: 20px;
-        margin: 10px;
+        margin: 10px; 
     }
     
     .keyboard {
