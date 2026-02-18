@@ -364,7 +364,7 @@ body.light {
     transition: all 0.2s ease;
 } 
 
-.emoji:hover {
+.emoji:hover { 
     background: rgba(0, 0, 0, 0.1);
     transform: scale(1.2);
 }
@@ -380,7 +380,7 @@ body.light {
 .prediction {
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    border-radius: 20px;
+    border-radius: 20px; 
     padding: 8px 15px; 
     color: white;
     cursor: pointer;
@@ -394,7 +394,7 @@ body.light {
     transform: translateY(-2px);
 }
 
-.voice-indicator {
+.voice-indicator { 
     position: fixed;
     top: 50%;
     left: 50%;
