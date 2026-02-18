@@ -387,7 +387,7 @@ body.light {
     white-space: nowrap;
     transition: all 0.2s ease;
     font-size: 14px;
-}
+} 
 
 .prediction:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -403,16 +403,16 @@ body.light {
     color: white;
     padding: 20px;
     border-radius: 50%; 
-    font-size: 24px;
+    font-size: 24px; 
     z-index: 2000;
     animation: pulse 1s infinite;
     display: none;
-}
+} 
 
 .quiz-modal {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -421,14 +421,14 @@ body.light {
     align-items: center;
     z-index: 3000;
 }
-
+ 
 .quiz-content {
     background: rgba(255, 255, 255,  0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 30px;
+    padding: 30px; 
     max-width: 500px;
-    width: 90%;
+    width: 90%; 
     text-align: center;
 }
  
@@ -440,7 +440,7 @@ body.light {
 
 .quiz-input {
     width: 100%;
-    padding: 15px;
+    padding: 15px; 
     font-size: 18px; 
     border: 2px solid #ddd;
     border-radius: 10px; 
@@ -452,7 +452,7 @@ body.light {
     display: flex;
     gap: 10px;
     justify-content: center;
-}
+} 
 
 .quiz-btn {
     padding: 10px 20px;
@@ -468,7 +468,7 @@ body.light {
     color: white;
 }
 
-.quiz-btn.secondary {
+.quiz-btn.secondary { 
     background: #f44336;
     color: white;
 }
