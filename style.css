@@ -63,7 +63,7 @@ body.light {
     justify-content: flex-end;
     gap: 10px;
     margin-bottom: 20px;
-}
+} 
  
 .control-btn {
     background: rgba(255, 255, 255, 0.2);
@@ -81,7 +81,7 @@ body.light {
     transform: translateY(-2px);
 }
 
-.control-btn:active {
+.control-btn:active { 
     transform: scale(0.95);
 }
  
@@ -96,7 +96,7 @@ body.light {
     border: none;
     border-radius: 15px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 18px; 
     font-family: 'Courier New', monospace;
     resize: none;
     outline: none;
@@ -110,7 +110,7 @@ body.light {
     max-width: 100%;
 }
 
-.footer {
+.footer { 
     text-align: center;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.8);
@@ -129,7 +129,7 @@ body.light {
     cursor: pointer;
     transition: all 0.1s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    user-select: none;
+    user-select: none; 
     min-height: 50px;
     display: flex;
     align-items: center;
@@ -144,7 +144,7 @@ body.light {
     top: 50%;
     left: 50%;
     width: 0;
-    height: 0;
+    height: 0; 
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -154,7 +154,7 @@ body.light {
 .key:active::before {
     width: 100px;
     height: 100px;
-}
+} 
 
 .dark .key {
     background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
