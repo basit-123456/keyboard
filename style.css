@@ -459,14 +459,14 @@ body.light {
     border: none; 
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    transition: all 0.2s ease;
+    font-size: 16px; 
+    transition: all 0.2s ease; 
 } 
 
 .quiz-btn.primary {
     background: #4CAF50;
     color: white;
-}
+} 
 
 .quiz-btn.secondary { 
     background: #f44336;
