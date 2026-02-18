@@ -362,7 +362,7 @@ body.light {
     border-radius: 8px;  
     cursor: pointer;
     transition: all 0.2s ease;
-} 
+}  
 
 .emoji:hover { 
     background: rgba(0, 0, 0, 0.1);
@@ -373,7 +373,7 @@ body.light {
     display: flex; 
     gap: 10px;
     margin-bottom: 15px;
-    overflow-x: auto;
+    overflow-x: auto; 
     padding: 5px 0;
 } 
 
@@ -386,7 +386,7 @@ body.light {
     cursor: pointer;
     white-space: nowrap;
     transition: all 0.2s ease;
-    font-size: 14px;
+    font-size: 14px; 
 } 
  
 .prediction:hover {
